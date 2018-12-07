@@ -1,0 +1,49 @@
+.CTcntnt{
+    background-color: whitesmoke;
+    top: 15%;
+ }
+ .catImage{
+    width:140px;
+    height:140px;
+    border: 2px solid #6cc9fa;
+    border-radius: 8px;
+    margin-left:5%;
+    margin-right:5%;
+    background:white;
+ }
+ .pCatalog{
+    font-size: 16px;
+    text-align: center;
+    color: grey;
+ }
+ .catTitle{
+    position: absolute;
+    left: 30px;
+    text-align: center;
+    top: 15px;
+ }
+ .catAdd{position: absolute;
+    right: 10px;
+    top: 16px;
+    background: #ec7e48;
+    font-size: 18px;
+    color :white;
+    border-radius:6px;
+    border: 1px solid white;
+    }
+    .Ctlgfab{
+       position: absolute;
+       bottom: 24%;
+       right: 2%;
+       
+    }
+    .Ctlgfabtag{
+         position: fixed;
+         font-family: cursive; 
+         color: grey;
+         bottom: 11%;
+         right: 1%;
+         
+    }
+    
+ 

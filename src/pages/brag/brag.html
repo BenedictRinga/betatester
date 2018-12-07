@@ -1,0 +1,90 @@
+<ion-header no-border [scrollHide]="headerScrollConfig" [scrollContent]="pageContent">
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+        </button>
+          <ion-title class="custTitle">My Brags</ion-title>
+            <ion-buttons start>
+          <button ion-button icon-only>
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="help-circle"></ion-icon>
+        <!-- (click)="ngIfCtrl()" -->
+          </button>
+            </ion-buttons>
+              
+      <ion-buttons end (click)="presentPopover2($event)">
+        <button ion-button icon-only>
+          <ion-icon name="more"></ion-icon>
+            </button>
+              </ion-buttons>             
+            </ion-navbar>
+          </ion-header>
+
+<ion-content #pageContent fullscreen>
+
+
+  <ion-tabs tabsPlacement=bottom selectedIndex="1" class="tabs">
+    <ion-tab [root]="tab1Root" tabTitle="Focus"></ion-tab>
+    <ion-tab [root]="tab2Root" tabTitle="MyStatus"></ion-tab>
+    <ion-tab [root]="tab3Root" tabTitle="Catalogs"></ion-tab>
+    </ion-tabs>
+    
+    <!-- to choose which tab shows first on Brag open, qualify tabs -->
+    <!-- selectedIndex="1" class="tabs"  -->
+    
+    <!-- To hide tabs on subpages, qualify each tab line -->
+    <!-- tabsHideOnSubPages="true" -->
+
+    
+<div>
+    <ion-row class="firstcol" *ngIf="hide" padding-top="20px">
+
+        <ion-col><ion-badge item-start color="primary" class="badge">260k</ion-badge></ion-col>
+
+           <ion-col style="line-height:15px;"><img class="wTw" src="assets/imgs/w3wApple.jpg"/><br>
+              <label class="Mstatus">Exact.Loc</label></ion-col>
+
+              <ion-col style="line-height:15px;"><ion-icon name="checkmark-circle"></ion-icon><br>
+                <label class="Mstatus">Endorsements</label></ion-col>
+
+                <ion-col style="line-height:15px;" col-4  (click)="presentPopover($event)"><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><br>
+            <label class="Mstatus">Chk.Rating</label></ion-col>
+           
+        <ion-col style="line-height:15px;"><ion-icon name="pin"></ion-icon><br>
+    <label class="Mstatus">Loc.Pin</label></ion-col>
+    
+  </ion-row>
+</div>
+
+
+<div> 
+  <ion-row class="secdcol" *ngIf="hide">
+    <ion-col (click)="BragProfilePage()"><ion-icon name="contact"></ion-icon><br><label>Profile</label></ion-col>
+            <ion-col (click)="FormSamplePage()"><ion-icon name="megaphone"></ion-icon><br><label>Broadcast</label></ion-col>
+          <ion-col (click)="FeedbackvPage()"><ion-icon name="sync"></ion-icon><br><label>Feedback</label></ion-col>
+      <ion-col (click)="GiftBragPage()"><img class="Bragift" src="assets/imgs/GiftBox75.png"/><br><label>Gift.a.Brag</label></ion-col>
+  </ion-row>
+</div>
+
+
+<!-- <super-tabs tabsPlacement=bottom selectedTabIndex="1">
+  <super-tab [tabRoot]="tab1Root" tabTitle="Focus"></super-tab>
+  <super-tab [tabRoot]="tab2Root" tabTitle="MyStatus"></super-tab>
+  <super-tab [tabRoot]="tab3Root" tabTitle="Catalogs"></super-tab>
+</super-tabs> -->
+
+<!-- <super-tabs>
+  <super-tab [root]="FocusPage" title="First page"></super-tab>
+  <super-tab [root]="MyStatusPage" title="Second page"></super-tab>
+  <super-tab [root]="CatalogsPage" title="Third page"></super-tab>
+</super-tabs> -->
+
+<!-- https://github.com/msolima/horizontalIonic2Tabs -->
+
+
+</ion-content>
+

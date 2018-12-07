@@ -1,0 +1,91 @@
+<ion-content padding class="JbgColor">
+  
+  <div class="Jlogin"> 
+     
+      <form action="" [formGroup]="registerForm" (ngSubmit)= "registerForm.valid &&  onDoRegister()"  novalidate>
+          <ion-item class="custom1">
+               <ion-input clearInput placeholder="Name" class="cust"
+                   id = "name" [(ngModel)]="user.name" formControlName="name">
+               </ion-input>
+           </ion-item> 
+
+           <ion-item class="custom1">
+               <ion-input clearInput placeholder="Phone Number" class="cust"
+                    id = "username" [(ngModel)]="user.username" formControlName="username">
+                  </ion-input>
+               </ion-item>
+
+          <ion-item class="custom1">
+               <ion-input clearInput placeholder="Email" class="cust"
+                   id = "email" [(ngModel)]="user.email" formControlName="email">
+                </ion-input>
+           </ion-item>
+
+          <ion-item class="custom1">
+               <ion-input clearInput placeholder="Password" class="cust"
+                    id = "password" [(ngModel)]="user.password" formControlName="password"
+                [type]="hide ? 'password':'text' ">
+  
+          <ion-icon name="menu" (click)="hide = !hide">
+              {{ hide ? 'visibility' :'visibility_off' }}
+          </ion-icon> 
+          </ion-input>
+      </ion-item>
+     
+     
+  </form>
+  <br>
+</div> 
+
+
+                   <button ion-button small class="modi1" 
+                      type="submit" 
+                      (click)=" onDoRegister(registerForm)"
+                      [disabled]="!registerForm.valid">
+                      Click to join
+                  </button>
+
+                 {{ brag}}
+                  
+                  
+                  
+
+
+<p class="paragraph1">Or login with</p>
+
+<div class="JaltloginFG">
+      <ion-grid>
+          <ion-row>
+              <ion-col>
+                   <ion-icon name="logo-facebook" class="facebookCOLOR"></ion-icon>
+                       </ion-col>
+                      <ion-col>
+                  <ion-icon name="logo-google" class="googleCOLOR"></ion-icon>
+              </ion-col></ion-row></ion-grid>
+          </div>
+   
+
+<div class="paragraphBox"  *ngIf="buttonClicked2">
+   <br>
+   <br>
+    <P class="para1">By joining Ringa, you agree to the <span  style="color:blue" (click)="TosPage()">Terms of Service</span> and  <span  style="color:blue" (click)="PrivPage()">Privacy Policy</span>, including <span  style="color:blue" (click)="CookiesPage()">Cookie Use</span>. Others will be able to find you by searching for the email or phone number you have provided. </P>
+    <br>
+    <button ion-button small (click)="loginHome()">Agree, & enter Ringa</button>
+    <br>
+    <br>
+  </div>
+
+  <!-- NAVIGATION https://stackoverflow.com/questions/40245847/how-to-go-to-another-page-with-a-button-click-with-ionic -->
+
+  <div class="Jmistake">
+      <ion-row>
+  <ion-col text-align: right col-9><p class="parag1">Already have an account?</p></ion-col>
+      <ion-col col-3 text-align: left><p class="paragh1" (click)="LoginPage()">Login</p></ion-col>
+</ion-row>
+</div>
+<!--   
+<p class="parag1">Already have an account?</p>
+<p class="paragh1" (click)="LoginPage()">Log In</p> -->
+
+
+</ion-content>

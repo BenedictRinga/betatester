@@ -1,0 +1,47 @@
+<ion-header no-border >
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+        </button>
+          <ion-title class="custTitle">QChat</ion-title>
+            <ion-buttons start>
+          <button ion-button icon-only>
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="help-circle"></ion-icon>
+          </button>
+            </ion-buttons>
+          
+      <ion-buttons end>
+        <button ion-button icon-only>
+          <ion-icon name="more"></ion-icon>
+            </button>
+              </ion-buttons>             
+            </ion-navbar>
+          </ion-header>
+
+<ion-content>
+
+
+<div>  
+  <ion-tabs tabsPlacement=bottom selectedIndex="1" class="tabs">
+        <ion-tab [root]="FriendsPage" tabTitle="Friends"></ion-tab>
+        <ion-tab [root]="ChatroomPage" tabTitle="Chats" ></ion-tab>
+    </ion-tabs>
+  </div>
+  
+  <div>
+<ion-row class="labelcol">
+  <ion-col><ion-icon name="contacts"></ion-icon><br><label>Contacts</label></ion-col>
+    <ion-col><ion-icon name="contact"></ion-icon><br><label>Profile</label></ion-col>
+      <ion-col><ion-icon name="settings"></ion-icon><br><label>Settings</label></ion-col>
+   <ion-col><ion-icon name="logo-rss"></ion-icon><br><label>Broadcast</label></ion-col>
+ <ion-col><ion-icon name="people"></ion-icon><br><label>Group</label></ion-col>
+</ion-row>
+</div>
+
+
+</ion-content>

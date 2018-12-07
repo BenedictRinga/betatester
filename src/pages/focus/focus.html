@@ -1,0 +1,106 @@
+<!--
+  Generated template for the FocusPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar> 
+    <ion-title>What am I focused on...</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="FCntnt">
+
+  <!-- DUNBAR'S Law of frienship -->
+  <!-- https://www.newyorker.com/science/maria-konnikova/social-media-affect-math-dunbar-number-friendships -->
+  <!-- https://www.sciencealert.com/the-latest-data-suggests-you-can-only-keep-five-close-friends -->
+  <!-- https://www.businessinsider.com/friends-limited-number-of-close-relationships-2018-3?IR=T  -->
+  
+
+
+
+<!-- User details, date, etc. -->
+
+  <ion-card class="Focard" *ngFor="let card of cards">
+      <div>
+        <ion-grid class="Focitem">
+    <ion-item>
+       <ion-avatar item-end>
+          <img src="assets/imgs/Nairobi.jpg" imageViewer>
+             </ion-avatar>
+           <div (click)="BragVPage()"><h2>Marty McFly</h2></div>
+          <p (click)="BragVPage()">November 5, 1955; (11h ago)</p>
+        <!-- <ion-row align-items-baseline><ion-col><p>November 5, 1955</p></ion-col>
+             <ion-col center text-center><ion-note>11h ago</ion-note></ion-col>
+           </ion-row> -->
+        </ion-item>
+      </ion-grid>
+    </div>
+
+    
+      <!-- Photo, GIF, or Video (multi-stacked) -->
+ <!-- <div>
+    <ion-scroll scrollX="true" scrollY="true" zoom="true">
+    <img src="assets/imgs/Nairobi.jpg" imageViewer/>
+  </ion-scroll> -->
+  <img src="assets/imgs/Nairobi.jpg" imageViewer/>
+  <!-- </div> -->
+
+  <ion-card-content>
+      <p>Wait a minute. Wait at a minute, Doc. Uhhh... t a minute, Doc. Uhhh... t a minute, Doc. Uhhh... Are you telling me that you built a time machine... out ofAre you telling me that you built a time machine... out ofAre you telling me that you built a time machine... out of minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+  </ion-card-content>
+
+  <!-- Social media ENGAGEMENT response    -->
+  <ion-row class="engagement">
+    <ion-col>
+      <button ion-button icon-start clear small>
+        <ion-icon name="thumbs-up"></ion-icon>
+        <div>12</div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-start clear small>
+        <ion-icon name="text"></ion-icon>
+        <div>4</div>
+      </button>
+    </ion-col>
+    <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="share"></ion-icon>
+          <div>4</div>
+        </button>
+      </ion-col>
+      <ion-col>
+          <button ion-button icon-start clear small>
+            <ion-icon name="star-outline"></ion-icon>
+          </button>
+        </ion-col>
+  </ion-row>
+
+</ion-card>
+
+<!-- Shipping with useful features for creating effective layouts: 
+
+
+Built from three blocks: header, content & footer
+Fully supports typograpy elements & classes
+Thumbnail, avatar, inline & cover image support
+Integrates with horizontal scroll view and list view
+Multiple theme support
+Lightweight footprint
+RTL Support
+Supports card collections -->
+
+
+
+  <ion-fab color="primary" class="FCfab">
+    <button ion-fab><ion-icon name="add"></ion-icon></button>
+      </ion-fab>
+      <label class="Focusfabtag">Add to Focus</label>
+
+</ion-content>
+

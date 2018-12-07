@@ -1,0 +1,17 @@
+<ion-navbar *navbar [blankAttr]="navbarTheme">
+  <ion-title>a page title</ion-title>
+  <button>hello world</button>
+</ion-navbar>
+<ion-content padding>
+  <button (click)="setNavbarTheme('primary')">primary</button>
+  <br>
+  <button (click)="setNavbarTheme('secondary')">secondary</button>
+  <br>
+  <button (click)="setNavbarTheme('dark')">dark</button>
+  <br>
+  <button (click)="setNavbarTheme('light')">light</button>
+  <br>
+  <button (click)="setNavbarTheme('danger')">danger</button>
+  <br>
+  <button (click)="qChat()">Logout</button>
+</ion-content>

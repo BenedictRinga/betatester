@@ -1,0 +1,53 @@
+<ion-header>
+    <!-- <ion-navbar color="primary">
+        <button (click)="back()" class="back">
+       
+        </button> -->
+        <ion-title class="giftTitle">Contact Card</ion-title>
+        <!-- <button class="help">
+            <ion-icon name="help"></ion-icon>
+        </button> -->
+    <!-- </ion-navbar> -->
+  </ion-header>
+  
+  
+  <ion-content>
+
+        <div>
+            <ion-avatar><img class="contactDP" src="assets/imgs/logo.png">  
+            </ion-avatar>        
+        </div>
+
+    <div *ngFor="let brag of brags" (click)="itemTapped($event, brag)">
+              
+  <!-- Name -->
+  <h3 class="FBname">{{brag.name}}</h3>
+  <p class="FBaddress">{{brag.address}}</p>
+  <p class="FBlandmarks">{{brag.landmarks}}</p>
+  <p class="FBbiztype">{{brag.BizType}}</p>
+  <p class="FBwebsite">{{brag.Website}}</p>
+  <p class="FBemail">{{brag.Email}}</p>
+
+</div> 
+
+<!-- TAP CARD to dismiss -->
+<ion-content (click)="pop()"></ion-content> 
+
+<!-- <div class="FBmodalcol"> -->
+            <ion-footer>
+                <ion-row align-items-start align-items-baseline>
+                  <ion-col><img class="BragIcon" src="assets/imgs/RingaIcon.png"/></ion-col>
+                  <!-- Group 1 -->
+                  <!-- https://www.technouz.com/4694/call-telephone-number-ionic-3-ionic-native/ -->
+                      <ion-col (click)="callNumber()"><ion-icon class="bottomIcon" name="call"></ion-icon></ion-col>
+                      <!-- Group 2 -->
+                            <ion-col (click)="presentRingamailModal()"><ion-icon class="bottomIcon" name="mail"></ion-icon></ion-col>
+                       <ion-col (click)="presentPopoverC3($event)"><ion-icon class="bottomIcon" name="alarm"></ion-icon></ion-col>
+                   <ion-col><ion-icon class="bottomIcon" name="pin"></ion-icon></ion-col>
+               <ion-col><ion-icon class="bottomIcon" name="share"></ion-icon></ion-col>
+          </ion-row>
+        </ion-footer>
+    <!-- </div>    -->
+  
+  
+  </ion-content>

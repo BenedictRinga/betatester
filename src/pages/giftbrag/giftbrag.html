@@ -1,0 +1,60 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button (click)="back()" class="back">
+        </button>
+        <ion-title class="giftTitle">Gift-A-Brag</ion-title>
+        <button class="help">
+            <ion-icon name="help"></ion-icon>
+        </button>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+        <img class="profileImage" src="assets/imgs/logo.png">
+        <button class="settings">
+            <ion-icon name="settings"></ion-icon>
+        </button><br><p class="account">Accounts</p>
+        <ion-row class="names1">
+            <input type="text" class="inputs" placeholder="Name">
+        </ion-row>
+        <ion-row class="names2">
+            <input type="text" class="inputs" placeholder="Address">
+        </ion-row>
+        <ion-row class="names3">
+            <input type="text" class="inputs" placeholder="Guiding landmarks">
+        </ion-row>
+        <ion-row class="names4">
+            <input type="text" class="inputs" placeholder="Business type/ specialisation">
+        </ion-row>
+        <ion-row class="names5">
+            <input type="text" class="inputs" placeholder="Website">
+        </ion-row>
+        <ion-row class="names6">
+            <input type="text" class="inputs" placeholder="Email">
+        </ion-row>
+        <ion-row class="names7">
+            <input type="text" class="inputs" placeholder="Phone number">
+        </ion-row>    
+        <ion-row class="names8">
+            <ion-col>
+                <p class="bottomTxt"> Email</p>
+                <button class="bottomIcon"><ion-icon name="mail"></ion-icon></button>
+            </ion-col>
+            <ion-col>
+                <p class="bottomTxt"> Call</p>
+                <button class="bottomIcon"><ion-icon name="call"></ion-icon></button>
+            </ion-col>
+            <ion-col>
+                <p class="bottomTxt"> Pin</p>
+                <button class="bottomIcon"><ion-icon name="pin"></ion-icon></button>
+            </ion-col>
+            <ion-col>
+                <p class="bottomTxt"> w3w</p>
+                <img class="w3w" src="assets/imgs/w3w.png">
+            </ion-col>
+            <ion-col>
+                <button (click)="pop()" class="done">Done</button>
+            </ion-col>
+        </ion-row>  
+  
+  </ion-content>

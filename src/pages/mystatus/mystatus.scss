@@ -1,0 +1,74 @@
+.MSCntnt{
+
+  
+.fake-skeleton{
+    width: 60%;
+}
+  
+    position: inherit;
+    top: 15%;
+    // https://www.joshmorony.com/create-a-stylish-news-feed-layout-in-ionic-2/
+  
+    .MScard{
+       
+        background-color: map-get($colors, almond);
+        opacity: 0.8;
+        width: 100%;
+        margin: 0;
+        text-align: justify;
+        margin-bottom: 25px;
+        position: relative;
+        // top: -30px;
+    }
+
+    // ion-card:last-of-type {
+    //     margin-bottom: 0 !important;
+    // }
+  
+      .card-title {
+        position: absolute;
+        top: 36%;
+        font-size: 2.0em;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 1.0em;
+        position: absolute;
+        top: 52%;
+        width: 100%;
+        color: #fff;
+      }
+  
+      .FImg{
+        position: relative;
+        width: 100%;
+    
+    }
+    
+    .MSColor{
+    background-color: whitesmoke;
+  }
+  
+  .BTops{
+      position: absolute;
+      top: 20%;
+  }
+  .MSfab{
+      position: absolute;
+      bottom: 24%;
+      right: 2%;
+    }
+    .MSfabtag{
+       position: fixed;
+       font-family: cursive; 
+       color: grey;
+       bottom: 11%;
+       right: 1%;
+       
+    }
+    
+  }
+  

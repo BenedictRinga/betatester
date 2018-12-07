@@ -1,0 +1,77 @@
+.md,
+.ios,
+.wp {
+ page-brag {
+   ion-header {
+        height: 45px;//by default 56px
+    }
+}
+}
+    .firstcol{
+    background-color: whitesmoke;
+    width:100% !important;
+    position: absolute;
+    top: 5%;
+    font-size: 15px;
+    color: grey;
+    left: 0%;
+    text-align: center;
+    height:66px;
+
+}
+.Bragstatus{
+    height:12px;
+    width:12px;
+}
+.Bragift{
+    height: 16px;
+    width: 16px;
+}
+.Bstatus{
+    font-size: 5px;
+}
+
+.Mstatus{
+    font-size: 8px;
+}
+.wTw{
+    height:15px;
+    width: 15px;
+}
+
+.secdcol{
+    background-color: blanchedalmond;
+    width:100%;
+    position: absolute;
+    top: 15%;
+    font-size: 15px;
+    color: grey;
+    left: 0%;
+    text-align: center;
+    height:45px;
+}
+// .TMstatus{
+//     font-size: 10px;
+//     color: dimgray;
+//     text-align: center;
+// }
+.badge{
+    // height: 20px;
+    width: 45px;
+    $badge-font-size: 3px;
+}
+
+// .bragSecond{ 
+//     background-color: white;
+//     position: absolute;
+//     top: 20%;
+// }
+
+
+// p.link{
+//     color:#ff5722;
+   
+// }
+// .bragTop{
+//     background-color: white;
+// }

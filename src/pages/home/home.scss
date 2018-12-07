@@ -1,0 +1,63 @@
+.home {
+    background: url('../assets/imgs/ionicLADY30.jpg');
+      width: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .welcome1{
+      position: absolute;
+      width: 80%;
+      height: 25px;
+      top: 12%;
+      left: 10%;
+      right: 10%;
+    }
+    .homeicon{
+
+      height: 60px;
+      width: auto;
+      margin: auto;
+      display: block;
+    }
+
+    .welcome2{
+      position: absolute;
+      height: 5em;
+      width: 80%;
+      top: 22%;
+      left: 10%;
+      right: 10%;
+    }
+    
+    .homebrand{
+      
+      font-size: 5em;
+      font-weight: 900;
+      color: map-get($colors, primary);
+      text-align: center;
+      -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #ec7e48;
+      opacity: 0.5;
+      text-shadow: 1px;
+    }
+    
+    
+    button.custom{
+      width:60%;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      left:20%;
+      right: 20%
+    }
+    button.cust{
+      width:60%;
+      border-radius: 10px;
+      position: absolute;
+      top: 65%;
+      left:20%;
+      right: 20%;
+  }
+  

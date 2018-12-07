@@ -1,0 +1,39 @@
+<ion-menu [content]="content">
+    <ion-header>
+      <ion-toolbar>
+        <!-- <ion-title>Ringa</ion-title> -->
+        <!-- <ion-title class="custTitle">Ringa</ion-title> -->
+      </ion-toolbar>
+    </ion-header>
+  
+    <ion-content>
+
+        <!-- https://forum.ionicframework.com/t/dynamically-change-navbar-color/46280/9 -->
+      <ion-list>
+        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+          {{p.title}}
+        </button>
+      </ion-list>
+
+    
+      <div class="Mextraitems">
+          <ion-row>
+                  <ion-col>
+                   <h1 class="Mextrahead">Ringa</h1>
+                  </ion-col>
+               </ion-row>
+
+               <ion-row>
+                  <ion-col>
+                <img src="assets/imgs/RingaIcon.png" class="DPframe"/>
+                  </ion-col>
+                </ion-row>
+          </div>
+        
+      
+    </ion-content>
+  
+  </ion-menu>
+  
+  <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+  <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

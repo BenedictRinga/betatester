@@ -1,0 +1,138 @@
+<ion-header>
+        <ion-navbar>
+            <!-- <button (click)="back()" class="pbback">
+            </button> -->
+            <ion-title class="pbgiftTitle">My Profile</ion-title>
+      
+                        <ion-buttons end>
+                        <button ion-button icon-only end (click)="onButtonClick()">
+                          <ion-icon name="help-circle"></ion-icon>
+                            </button>
+                          </ion-buttons>
+                    
+        </ion-navbar>
+      </ion-header>
+      
+      
+      <ion-content>
+      
+         <!-- ***VALIDATION FORM https://www.joshmorony.com/advanced-forms-validation-in-ionic-2/ -->
+          <!-- <ion-slides #contactSlider page>
+       
+              <ion-slide> -->
+                   
+                    <form #BragForm="ngForm" (ngSubmit)="addBrag(BragForm)">
+            <!-- RingAssist1 -->
+            <div class="pbRingAssist1" *ngIf="buttonClicked"><ion-row>
+                    
+                    <ion-col>Click to set Icon/Display Photo or Logo</ion-col>
+                    <ion-col>Swipe left to see the results</ion-col>
+                </ion-row></div> 
+        
+      <!-- Logo, DP, etc -->
+           <!-- <div><img class="pbprofileImage" src="assets/imgs/logo.png">
+           </div>  -->
+            
+            <!-- RingAssist2 -->
+          <div class="pbRingAssist2" *ngIf="buttonClicked">
+            
+                <ion-col>Please fill in your Contact information</ion-col>
+      
+                                   </div>
+                
+      <div>
+        
+            <ion-row class="pbnames1">
+                <input type="text" class="inputs" [(ngModel)]="userId.name" name="name" placeholder="Name">
+            </ion-row>
+            <ion-row class="pbnames2">
+                <input type="text" class="inputs" [(ngModel)]="userId.address"  name="address" placeholder="Address">
+            </ion-row>
+            <ion-row class="pbnames3">
+                <input type="text" class="inputs" [(ngModel)]="userId.landmark"  name="landmark" placeholder="Guiding landmarks">
+            </ion-row>
+            <ion-row class="pbnames4">
+                <input type="text" class="inputs" [(ngModel)]="userId.BizType"  name="BizType" placeholder="Business type/ specialisation">
+            </ion-row>
+            <ion-row class="pbnames5">
+                <input type="text" class="inputs" [(ngModel)]="userId.Website"  name="Website" placeholder="Website">
+            </ion-row>
+            <ion-row class="pbnames6">
+                <input type="text" class="inputs" [(ngModel)]="userId.Email"  name="Email" placeholder="Email">
+            </ion-row>
+            <ion-row class="pbnames7">
+                <input type="text" class="inputs" [(ngModel)]="userId.PhoneNumber"  name="PhoneNumber" placeholder="Phone number">
+            </ion-row>  
+          </div>
+      
+          <div>
+            <ion-row class="pbnames8">
+                <ion-col>
+                    <button class="bottomIcon" (click)="presentPopover($event)"><ion-icon name="mail"></ion-icon></button>
+                </ion-col>
+                <ion-col (click)="addNumber">
+                    <button class="bottomIcon" (click)="presentPopover2($event)"><ion-icon name="call"></ion-icon></button>
+                </ion-col>
+                <ion-col (click)="addGPin">
+                    <button class="bottomIcon" (click)="presentPopover3($event)"><ion-icon name="pin"></ion-icon></button>
+                </ion-col>
+                <ion-col (click)="addw3w">
+                    <img class="pbw3w" (click)="presentPopover4($event)" src="assets/imgs/w3w.png">
+                </ion-col>
+            </ion-row>  
+      </div>
+      
+      <!-- RingAssist3 -->
+      <div><ion-row *ngIf="buttonClicked" class="pbRingAssist3">
+              <ion-col text-center>Press any icon to set up EasyContact</ion-col>
+          </ion-row></div> 
+      
+      
+      <!-- RingAssist4 -->
+      <div><ion-row *ngIf="buttonClicked" class="pbRingAssist4">
+          <ion-col>
+                  <p> Email</p></ion-col>
+              <ion-col>
+                  <p> Call</p>
+                      </ion-col>
+              <ion-col>
+                  <p> Pin</p></ion-col>
+              <ion-col>
+                  <p> w3w</p> </ion-col>
+      </ion-row>
+      </div>
+    </form>
+      <ion-fab color="primary" class="pBfab">
+               <button ion-fab (click)="addBrag(BragForm); pop()">Done</button>
+             </ion-fab>
+          <!-- </ion-slide> -->
+             
+      
+      <!-- ContactPage in Slide on BragProfile page
+      to show updates synchronously -->
+      
+          <!-- <ion-slide> -->
+                    
+                  <!-- <div><img class="pbprofileImage" src="assets/imgs/logo.png">
+           </div>
+                  
+                  
+                  
+                        <div> 
+                            <ion-row align-items-start align-items-baseline class="CCRow4">
+                                  <ion-col><img class="BragIcon" src="assets/imgs/RingaIcon.png"/></ion-col>
+                                      <ion-col (click)="call()"><ion-icon class="bottomIcon" name="call"></ion-icon></ion-col>
+                                            <ion-col (click)="presentProfileModal()"><ion-icon class="bottomIcon" name="mail"></ion-icon></ion-col>
+                                       <ion-col><ion-icon class="bottomIcon" name="alarm"></ion-icon></ion-col>
+                                   <ion-col><ion-icon class="bottomIcon" name="pin"></ion-icon></ion-col>
+                               <ion-col><ion-icon class="bottomIcon" name="share"></ion-icon></ion-col>
+                          </ion-row>
+                       </div> -->
+                  
+              <!-- </ion-slide>
+       
+           
+          </ion-slides> -->
+             
+      </ion-content>
+      

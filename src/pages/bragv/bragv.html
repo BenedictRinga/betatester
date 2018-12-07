@@ -1,0 +1,140 @@
+<!-- https://medium.com/@gregor.srdic/ionic3-hidding-header-on-footer-on-content-scroll-15ab95b05dc5 -->
+
+<!-- DYNAMIC CHANGE NAVcolor https://forum.ionicframework.com/t/dynamically-change-navbar-color/46280/9 -->
+<!-- *** background opacity: https://stackoverflow.com/questions/51922633/opacity-does-not-working-on-ionic-3 -->
+
+<!-- FROSTED GLASS navbar opacity https://www.joshmorony.com/create-a-stylish-news-feed-layout-in-ionic-2/ -->
+
+          <ion-header [scrollHide]="headerScrollConfig" [scrollContent]="pageContent">
+            <ion-navbar transparent color="primary">
+                <!-- <button (click)="back()" class="back">
+               
+                </button> -->
+                <ion-title class="giftTitle">@AllanBenz</ion-title>
+                <!-- <ion-title class="giftTitle">@{{aliasName}}!</ion-title> -->
+
+                <ion-buttons start>
+                    <button ion-button icon-only>
+                  <ion-icon name="search"></ion-icon>
+                </button>
+              </ion-buttons>
+
+              <ion-buttons end>
+                <button ion-button icon-only>
+                  <ion-icon name="help-circle"></ion-icon>
+                    </button>
+                </ion-buttons>
+
+            </ion-navbar>
+          </ion-header>
+
+          <!-- https://www.joshmorony.com/high-performance-parallax-animation-in-ionic-2/ -->
+
+          <ion-content #pageContent fullscreen>
+
+              <div class="BVzap">
+      
+      
+                  <ion-scroll scrollY="true" style="width: 100%; height: 93%;">
+                    <ion-grid>
+                    </ion-grid>
+                  </ion-scroll>
+                  <ion-grid>
+                      <ion-segment [(ngModel)]="category">
+                          <ion-segment-button value="gear">
+                              Promos
+                          </ion-segment-button>
+                          <ion-segment-button (click)="presentContactModal()">
+                              Contact Us
+                          </ion-segment-button>
+                          <ion-segment-button (click)="presentPopover2($event)" >
+                              Vision
+                          </ion-segment-button>
+                      </ion-segment>
+                    </ion-grid>
+                
+                    </div>
+
+          <div class="cardPOS">
+            <ion-card class="BVcard" *ngFor="let card of cards">
+              <ion-grid class="BVitem">
+            <ion-item>
+              <ion-avatar item-end>
+                <img src="assets/imgs/RingaIcon.png" imageViewer/>
+              </ion-avatar>
+              <div><h2>Marty McFly</h2></div>
+              <!-- <div><h2>{{userName}}</h2></div> -->
+                       <p>November 5, 1955; (11h ago)</p>
+            </ion-item>
+          </ion-grid>
+
+            <img src="assets/imgs/1897.jpg" imageViewer/>
+          
+            <ion-card-content>
+              <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+            </ion-card-content>
+          
+           <!-- Social media ENGAGEMENT response    -->
+  <ion-row class="engagement">
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>12</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>4</div>
+        </button>
+      </ion-col>
+      <ion-col>
+          <button ion-button icon-start clear small>
+            <ion-icon name="share"></ion-icon>
+            <div>4</div>
+          </button>
+        </ion-col>
+        <ion-col>
+            <button ion-button icon-start clear small>
+              <ion-icon name="star-outline"></ion-icon>
+            </button>
+          </ion-col>
+    </ion-row>
+          
+          </ion-card>
+        </div>
+      
+
+
+<ion-fab color="primary" class="BragVbk">
+  <button (click)="pop()" ion-fab><ion-icon name="arrow-back"></ion-icon></button>
+    </ion-fab>
+
+    <div>
+        <ion-row class="firstcolV" padding>
+            <ion-col>
+              <ion-badge item-start color="primary" class="badgeV">260k</ion-badge>
+            </ion-col>
+                <ion-col><img class="wTw" src="assets/imgs/w3wApple.jpg"/></ion-col>
+                   <ion-col><ion-icon name="chatboxes"></ion-icon></ion-col>
+               <ion-col (click)="presentPopover9($event)" col-4><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></ion-col>
+           <ion-col><ion-icon name="pin"></ion-icon></ion-col>
+       </ion-row>
+      </div>
+      
+      <!-- Settiings: choose icon colors -->
+      
+      <!-- SWIPE LISTENER https://forum.ionicframework.com/t/unable-to-catch-vertical-swipe-drag-events/46380/4 -->
+      
+      <div swipe-listener>
+          <ion-row class="secdcolV">
+            <ion-col><ion-icon name="heart" class="TMicons"></ion-icon><br><label class="TMstatusV">Focus</label></ion-col>
+                <ion-col (click)="presentContactModal()"><ion-icon name="contact" class="TMicons"></ion-icon><br><label class="TMstatusV">Contact</label></ion-col>
+                    <ion-col (click)="presentPopover4($event)"><ion-icon name="images" class="TMicons"></ion-icon><br><label class="TMstatusV">Catalogs</label></ion-col>
+                  <ion-col  (click)="presentFdbackModal($event)"><ion-icon name="sync" class="TMicons"></ion-icon><br><label class="TMstatusV">Feedback</label></ion-col>
+              <ion-col><ion-icon name="share" class="TMicons"></ion-icon><br><label class="TMstatusV">Share</label></ion-col>
+          </ion-row>
+        </div>       
+
+</ion-content>
+

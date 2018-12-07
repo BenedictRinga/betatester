@@ -1,0 +1,204 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+// http://ionicframework.com/docs/theming/
+
+//@import "../theme/icons";
+@import "../theme/icons";
+
+// PLATFORM STYLING 
+// https://ionicframework.com/docs/theming/platform-specific-styles/
+
+.md 
+.header{
+  height: 45px;//by default 56px
+}
+  .toolbar-background {
+    background-color: map-get($colors, primary);
+    height: 45px;
+}
+ion-title{
+  text-align: left;
+}
+.custTitle{
+  position: absolute;
+  top: 16px;
+  left: 50px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+// POPOVER positioning via app.scss
+// https://stackoverflow.com/questions/40524197/how-to-position-a-popover-in-ionic-2
+
+.WIDEcustom-popover .popover-content {
+  width: 90%;
+  top: 70px;
+  left: 30px;
+  bottom: 70px
+}
+.custom-popover .popover-content {
+  width: 80%;
+  top: 70px;
+  left: 30px;
+  bottom: 70px
+}
+
+// MODAL POSITIONING
+// https://stackoverflow.com/questions/52335691/ionic-3-position-modal-window-to-bottom-right-of-the-screen
+    
+  .myStatModal {
+        background: rgba(0, 0, 0, 0.5) !important;
+        padding: 10% 2%  !important;
+        // background-color: cornflowerblue !important;
+        border-style: solid;
+        border-width: 5px;
+        border-radius: 20px !important;
+        border-color: map-get($colors, primary);
+        margin: auto !important;
+        overflow: hidden !important;
+     }
+
+     .BragVModal {
+      background: rgba(0, 0, 0, 0.5) !important;
+      padding: 20% 10%  !important;
+      background-color: cornflowerblue !important;
+      border-style: solid;
+      border-width: 5px;
+      border-radius: 20px !important;
+      border-color: map-get($colors, primary);
+      margin: auto !important;
+      overflow: hidden !important;
+   }
+
+ 
+.nav{
+    background-color:#ec7e48;
+}
+.googleCOLOR{
+color: #db3236;
+}
+.facebookCOLOR{
+  color: #4885ed; 
+}
+.modaltxt{
+
+    width: calc(100% - 10px);
+    border: 2px;
+    border-radius: 5px;
+    color: map-get($colors, primary);
+    background: #ec7e48;
+    // background-color: aliceblue;
+    width:100%;
+    position: fixed;
+    bottom: 13% !important;
+    // font-size: 15px;
+    // color: grey;
+    // left: 0%;
+    // text-align: center;
+    // height:32px;
+ }
+ .BVzap{ 
+    background-image: url(https://ununsplash.imgix.net/photo-1421091242698-34f6ad7fc088?fit=crop&fm=jpg&h=650&q=75&w=950);
+    // background-image: url(https://images.unsplash.com/photo-1527153907022-465ee4752fdc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ed05c707f6cb2dd027a718a8797d02f6&auto=format&fit=crop&w=700&q=80);
+    // background-image: url(https://ununsplash.imgix.net/photo-1421091242698-34f6ad7fc088?fit=crop&fm=jpg&h=650&q=75&w=950);
+    // background-image: url(https://images.unsplash.com/photo-1517732306149-e8f829eb588a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f01588d10ff9d309abd7cf609fb7e265&auto=format&fit=crop&w=752&q=80);
+    // background-image: url(https://images.unsplash.com/photo-1525332193053-dee9e7348624?ixlib=rb-0.3.5&s=b2be64a7b17d323febd58bdfa710f9ad&auto=format&fit=crop&w=400&q=60);
+    // background-image: url(https://images.unsplash.com/photo-1513171920216-2640b288471b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=901666bbd4bcda6c9dfb9536e0e03cf2&auto=format&fit=crop&w=334&q=80);
+    
+    background-size: cover;
+    width:100%;
+    position: absolute;
+    top: 0%;
+    height: 34vh;
+  }
+
+// .modalcol{
+//     background-color: aliceblue;
+//     width:100%;
+//     position: fixed;
+//     bottom: 0% !important;
+//     font-size: 15px;
+//     color: map-get($colors, dark);
+//     left: 0%;
+//     text-align: center;
+//     height:32px;
+//  }
+ .DPframe{
+   
+    height:72px;
+    width:72px;
+    top: 125%;
+  }
+  .Mextraitems{
+    position: absolute;
+    height: 15em;
+    width: 60%;
+    top: 55%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+  
+  }
+  .Mextrahead{
+  
+    font-size: 4em;
+    font-weight: 900;
+    color: map-get($colors, primary);
+    // text-align: center;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ec7e48;
+    opacity: 0.5;
+    text-shadow: 1px;
+  }
+  
+  body {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    user-select: auto;
+    
+  }
+  ::-webkit-scrollbar,
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-content {
+      overflow-y: auto;
+  
+  }
+  // @media only screen and (min-width: 1025px) {
+  //     .scroll-content:not(.show-scrollbar) {
+  //         margin-right: -17px;
+  //         overflow-y: scroll;
+  //     }
+  // }
+
+//   @media only screen and (orientation: landscape)  {
+//     .my-modal {
+//      .modal-wrapper {
+//        position: absolute;
+//        top: 0 !important;
+//        left: 0 !important;
+//        display: block;
+//        width: 100% !important;
+//        height: 100% !important;
+//      } 
+//    }
+//  }

@@ -1,0 +1,63 @@
+<ion-content padding class="bgColor">
+  
+  <div class="Llogin"> 
+
+      <form action="" [formGroup]="loginForm" (ngSubmit)="loginForm.valid && onDoLogin()" novalidate>
+           <ion-item class="custom1">
+               <ion-input clearInput 
+                  placeholder="Phone Number" 
+                  class="cust" 
+                  id="phoneNumber"
+                  [(ngModel)]="user.phoneNumber" 
+                  formControlName="phoneNumber">
+              </ion-input>
+          </ion-item>
+  
+           <ion-item class="custom1">
+               <ion-input clearInput 
+                  placeholder="Password" 
+                  class="cust" 
+                  id="password" 
+                  [(ngModel)]="user.password" 
+                  formControlName="password"
+                  [type]="hide ? 'password':'text' ">
+              </ion-input>
+          </ion-item>
+      </form>
+      <br>
+  </div>
+  
+      <button ion-button small class="modi" 
+                          type="submit" (click)="onDoLogin(loginForm)" 
+                          [disabled]="!loginForm.valid">
+                           Click to login
+                      </button>
+<!-- 
+                       <div><button ion-button small class="modiXalt" (click)="loginHome()">Click to Login</button>
+                      </div> -->
+
+
+      <div class="Lforgot"><p class="para">Forgot password?</p></div>
+
+      <p class="paragraph">Or login with</p>
+      
+      <div class="LaltloginFG">
+          <ion-grid>
+              <ion-row>
+                  <ion-col>
+                      <ion-icon name="logo-facebook" class="facebookCOLOR"></ion-icon>
+                          </ion-col>
+                          <ion-col>
+                      <ion-icon name="logo-google" class="googleCOLOR"></ion-icon>
+                  </ion-col></ion-row></ion-grid>
+              </div>
+      
+      
+      <div class="mistake">
+          <ion-row>
+      <ion-col text-align: right col-8><p class="parag">Don't have an account?</p></ion-col>
+          <ion-col col-4 text-align: left><p class="paragh" (click)="JoinPage()">Join now</p></ion-col>
+      </ion-row>
+      </div>
+
+      </ion-content>

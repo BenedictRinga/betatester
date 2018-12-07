@@ -1,0 +1,195 @@
+.main {
+    background: url('../../assets/imgs/ionicLADY30.jpg');
+      width: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .MaincustTitle{
+      position: absolute;
+      top: 16px;
+      left: 50px;
+      text-align: center;
+      font-size: 18px;
+      color: white;
+    }
+ 
+    .navbar{
+      color: peru
+    }
+    .main img{
+        width: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+   //  img.gift{
+   //    position: absolute;
+   //    height:45px;
+   //    width:45px;
+   //    top: 7.5%;
+   //    right: 49%;
+   //  }
+   //  img.assist{
+   //    position: absolute;
+   //    height:42px;
+   //    width:42px;
+   //    top: 8%;
+   //    right: 37%;
+   //  }
+    main.white{
+      position: absolute;
+      height:42px;
+      width:42px;
+      top: 20%;
+      right: 38%;
+      color: white;
+    }    
+    .zap{ 
+      background-color: white;
+      width:70%;
+      border-radius: 16px;
+      position: absolute;
+      top: 6%;
+      left: 15%;
+      right: 15%;
+      height:75%;
+    }
+    .searchbar{
+      position: absolute;
+     //  border-color: primary;
+     //  border: 20px;
+      top: 15%;
+      border-radius: 10px;
+      width: 80%;
+      right: 10%;
+      left: 10%;
+    }
+ 
+    .RingAssist1{
+     position: absolute;
+     color: grey;
+     top: 0%;
+     right: 0%;
+   }
+ 
+   .RingAssist2{
+     position: relative;
+     font-size: 1em;
+     color: grey;
+     text-align: center;
+     top: 2%;
+     right: auto;
+     left: auto;
+   }
+   // .iconSet{
+     
+   //   height:12px;
+   //   width:5px;
+    
+   // }
+   .clickSet{
+     
+     color: #ec7e48;
+     font-size: 25px;
+     font-weight: bold;
+    
+   }
+   .camSet{
+     
+     color: #ec7e48;
+     font-size: 15px;
+     font-weight: bold;
+   
+   }
+   .camIcon{
+     
+     color: #ec7e48;
+    
+   
+   }
+   .bragSet{
+     
+     color: #ec7e48;
+     font-size: 15px;
+     font-weight: bold;
+    
+   }
+   .giftBSet{
+     
+     color: #ec7e48;
+     font-size: 15px;
+     font-weight: bold;
+   
+   }
+   .chatSet{
+     
+     color: #ec7e48;
+     font-size: 15px;
+     font-weight: bold;
+   
+   }
+   
+    .RingAssist3{
+     position: absolute;
+     color: grey;
+     font-weight: bold;
+     text-align: center;
+     top: 95%;
+     width: 56%;
+     left: 22%;
+     right: 22%;
+   }
+ 
+    .options{
+     position: absolute;
+     top: 85%;
+     width: 60%;
+     left: 20%;
+     right: 20%;
+   }
+      img.first{
+        
+        height:52px;
+        width:52px;
+        top: 88%;
+        
+    }
+      img.second{
+        opacity: 65%;
+        height:52px;
+        width:52px;
+        
+        
+    }
+    img.third{
+    
+     height:52px;
+     width:52px;
+     top: 88%;
+     
+   }
+   .extraitems{
+     position: absolute;
+     height: 15em;
+     width: 60%;
+     top: 125%;
+     left: 15%;
+     right: 15%;
+     text-align: center;
+   
+   }
+ .extrahead{
+   
+   font-size: 5em;
+   font-weight: 900;
+   color: map-get($colors, primary);
+   // text-align: center;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #ec7e48;
+   opacity: 0.5;
+   text-shadow: 1px;
+ }
+ 
+    

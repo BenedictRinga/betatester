@@ -1,0 +1,171 @@
+.pbback{position: absolute;
+    left: 10px;
+    top: 15px;
+    border: none;
+    background: #ec7e48;
+    font-size: 18px;
+    color :white;
+    }
+ .pbhelp{position: absolute;
+    right: 10px;
+    top: 15px;
+    background: #ec7e48;
+    font-size: 16px;
+    color :white;
+    border-radius: 50%;
+    border: 2px solid white;
+    }
+ .pbgiftTitle{
+    color: #618297;
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    text-align: center;
+    top: 15px;
+ }
+ 
+ .pbRingAssist1{
+    position: relative;
+    font-size: 15px;
+    color: grey;
+    top: 0%;
+    text-align: center;
+    right: auto;
+    left: auto;
+  }
+ 
+ .pbprofileImage{
+    position: absolute;
+    top: 6%;
+    left:40%;
+    width:80px;
+    height: 80px;
+    border:5px #ec7e48;
+    border-radius: 50%;
+    background:white;
+ }
+ 
+ .pbRingAssist2{
+    position: relative;
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+    top: 18%;
+    right: auto;
+    left: auto;
+  }
+ .pbnames1{
+    position: absolute;
+    top: 30%;
+    left:15%;
+    right: 15%;
+ }
+ .pbnames2{
+    position: absolute;
+    top: 38%;
+    left:15%;
+    right: 15%;
+ }
+ .pbnames3{
+    position: absolute;
+    top: 46%;
+    left:15%;
+    right: 15%;
+ }
+ .pbnames4{
+    position: absolute;
+    top: 54%;
+    left:15%;
+    right: 15%;
+ }
+ .pbnames5{
+    position: absolute;
+    top: 62%;
+    left:15%;
+    right: 15%;
+ }
+ .pbnames6{
+    position: absolute;
+    top: 70%;
+    left:15%;
+    right: 15%;
+ }
+ .pbnames7{
+    position: absolute;
+    top: 78%;
+    left:15%;
+    right: 15%;
+ }
+ .pbnames8{
+    position: absolute;
+    width:75%;
+    top: 90%;
+    left:2%;
+   //  right:5%;
+ 
+ }
+ .pbinputs{
+    border: 1px solid #ec7e48;
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+    color:black;
+ }
+ .pbdone{
+    margin-top: 35px;
+    margin-left:5px;
+    background:#6cc9fa;
+    font-size: 14px;
+    color :white;
+    border-radius: 8px;
+    height: 35px;
+ }
+ .pbbottomIcon{
+    background: white;
+    font-size: 30px;
+    color :#ec7e48;
+    margin-left:8px;
+ }
+ .pbbottomTxt{
+    color:black;
+    font-size: 12px;
+    text-align: center;
+ }
+ .pbw3w{
+    background: white;
+    width: 40px;
+    height: 40px;
+    margin-left:8px;
+ }
+  .pbRingAssist3{
+    position: absolute;
+    color: grey;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    top: 83%;
+    width: 100%;
+    // left: auto;
+    // right: auto;
+  }
+  .pbRingAssist4{
+   position: absolute;
+   width:75%;
+   left:3%;
+   color: grey;
+   font-size: 15px;
+   text-align: center;
+   top: 84%;
+   // left: auto;
+   // right: auto;
+ }
+ .pBfab{
+   position: fixed;
+   font-family: cursive; 
+   color: grey;
+   bottom: 2%;
+   right: 3%;
+   
+ }

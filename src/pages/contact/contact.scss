@@ -1,0 +1,76 @@
+page-contact{
+    ion-content{
+        height: 100%;
+    }
+    
+         .contactDP{
+            position: relative;
+            top: 15%;
+            width:20px;
+            height: 20px;
+            // border:5px #ec7e48;
+            // border-radius: 50%;
+            // background:white;
+        }
+    .FBname{
+        // background: white;
+        width:100%;
+        position: relative;
+        top: 50%;
+        color: grey;
+        text-align: center;
+        
+    }
+    .FBaddress{
+        // background: white;
+        width:100%;
+        position: relative;
+        top: 55%;
+        color: grey;
+        text-align: center;
+        
+    }
+    .FBlandmarks{
+        // background: white;
+        width:100%;
+        position: relative;
+        top: 60%;
+        color: grey;
+        text-align: center;
+        
+    }
+    .FBemail{
+        // background: white;
+        width:100%;
+        position: relative;
+        top: 75%;
+        color: grey;
+        text-align: center;
+        
+    }
+    .FBfooter{
+        // background: white;
+        width:100%;
+        position: absolute;
+        bottom: 0%;
+        
+        text-align: center;
+        
+    }
+    .bottomIcon{
+        background: white;
+        font-size: 35px;
+        color :#ec7e48;
+        // margin-left:8px;
+    }
+    .BragIcon{
+        background: white;
+        width: 28px;
+        height: 28px;
+        // margin-left:8px;
+    }
+    .bottomTxt{
+        font-size: 13px;
+        
+    }
+}

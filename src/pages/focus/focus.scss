@@ -1,0 +1,65 @@
+.FCntnt{
+    background-color: whitesmoke;
+    top: 15%;
+  
+    .Focard {
+     
+        background-color: map-get($colors, almond);
+        position: relative;
+        opacity: 0.8;
+        // height: 250px;
+        width: 100% !important;
+        margin: 0;
+        text-align: justify;
+        margin-bottom: 25px;
+        // top: -30px;
+    }
+  //   ion-avatar{
+  // position: absolute;
+  // top: 10px;
+  
+  //   }
+  
+      .Focitem {
+        height: 65px;
+      }
+      .engagement {
+        width: 90%;
+        right: 10%;
+      }
+      .Focrow1 {
+        height: 250px;
+        text-overflow: hidden;
+        display: block;
+        white-space: normal;
+      }
+      .Focitem2 {
+        height: 150px;
+        text-overflow: hidden;
+      }
+  
+      .Focimage {
+        border-style: solid;
+        height: 120px;
+        width: 120px;
+        border-radius: 10px;
+        
+      }
+      
+  
+  .FCfab{
+    position: absolute;
+    bottom: 24%;
+    right: 2%;
+    }
+  
+    .Focusfabtag{
+      position: fixed;
+      font-family: cursive; 
+      color: grey;
+      bottom: 11%;
+      right: 1%;
+      
+  }
+  
+  }

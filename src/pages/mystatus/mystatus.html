@@ -1,0 +1,109 @@
+<!--
+  Generated template for the MyStatusPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+  
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="MSCntnt">
+
+
+
+  <!-- Use ActionSheets, Popovers, exciting -->
+
+
+
+    <div class="BPRingAssist1" *ngIf="buttonClicked"><ion-row>
+                
+        <ion-col>Welcome to Brag, your exciting channel to a world of your own choosing...</ion-col>
+    </ion-row></div> 
+
+
+   <!-- User details, date, etc. -->s
+  
+   <ion-card class="MScard" *ngFor="let brag of brags" (click)="itemTapped($event, brag)">
+    
+    <div>
+      <ion-grid class="Focitem">
+        <ion-item>
+          <ion-avatar item-end>
+              <ion-img *ngIf="brag.image" src="{{brag.image}}" style="width: 100%"></ion-img>
+              <ion-img *ngIf="brag.image" [src]="brag.image" style="width: 100%"></ion-img>
+              <img src="{{brag.avatar}}" imageViewer>
+
+                </ion-avatar>
+                  <div (click)="BragVPage()"><h2>{{ brag.name}}</h2></div>
+                  <ion-item><ion-datetime displayFormat="MMM DD, YYYY HH:mm" pickerFormat="DD MMM YYYY" [(ngModel)]="myDate"></ion-datetime></ion-item>
+                  <!-- <ion-datetime displayFormat="MM DD YYYY" pickerFormat="DD MMM YYYY" [(ngModel)]="myDate"  ></ion-datetime> -->
+                <!-- <ion-row align-items-baseline><ion-col><p>November 5, 1955</p></ion-col>
+                <ion-col center text-center><ion-note>11h ago</ion-note></ion-col>
+              </ion-row> -->
+            </ion-item>
+          </ion-grid>
+        </div>
+
+
+  <!-- Photo, GIF, or Video (multi-stacked) -->
+<!-- <div>
+<ion-scroll scrollX="true" scrollY="true" zoom="true">
+<img src="assets/imgs/Nairobi.jpg" imageViewer/>
+</ion-scroll> -->
+<img src="{{brag.photo}}" imageViewer/>
+<!-- </div> -->
+
+<ion-card-content>
+  <p>{{brag.BGpost}}</p>
+</ion-card-content>
+
+<!-- Social media ENGAGEMENT response    -->
+<ion-row class="engagement">
+<ion-col>
+  <button ion-button icon-start clear small>
+    <ion-icon name="thumbs-up"></ion-icon>
+    <div>12</div>
+  </button>
+</ion-col>
+<ion-col>
+  <button ion-button icon-start clear small>
+    <ion-icon name="text"></ion-icon>
+    <div>4</div>
+  </button>
+</ion-col>
+<ion-col>
+    <button ion-button icon-start clear small>
+      <ion-icon name="share"></ion-icon>
+      <div>4</div>
+    </button>
+  </ion-col>
+  <ion-col>
+      <button ion-button icon-start clear small>
+        <ion-icon name="star-outline"></ion-icon>
+      </button>
+    </ion-col>
+</ion-row>
+
+</ion-card>
+
+    <!-- Use Modals to activate FAB button ******
+    https://ionicframework.com/docs/components/#modals ******
+     -->
+      <!-- <ion-fab (click)="presentBragpostModal($event)" color="primary" class="MSfab"> -->
+          <ion-fab (click)="presentBragpostModal($event)" color="primary" class="MSfab">
+            <button ion-fab>
+          <img src="assets/imgs/BragIcon.png"/>
+        </button>
+        <!-- <label>What's new?</label> -->
+       </ion-fab>
+       <label class="MSfabtag">What's new?</label>
+
+  
+  
+</ion-content>

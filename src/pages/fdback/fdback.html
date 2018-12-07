@@ -1,0 +1,64 @@
+<ion-content class="FdBcontainer">
+   
+        <!-- <div>
+                <img class="Logo" src="assets/imgs/logo.png">          
+            </div> -->
+
+          
+              <div class="FBheading">
+                  <h2>@AllanBenz</h2>
+                  <p>wants to hear from you.</p>
+                </div>
+            
+            
+
+  
+              <!-- <div>
+                    <button large class="Fbkview">View</button>
+                          <button (click)="pop()" large class="Fbkdone">Done</button>
+                              </div> -->
+      
+<div class="FBpost"> 
+    <form #BragForm="ngForm" (ngSubmit)="addBrag(BragForm)">
+        
+            <ion-footer [keyboardAttach]="content" class="">
+                <ion-toolbar class="FBtext-input">
+                  <ion-item no-lines class="FBion-item">
+                    
+                    <ion-textarea autosize
+                    rows="3"
+                    placeholder="Type your feedback here..."
+                    autocomplete="on"
+                    autocorrect="on"
+                    text-style="justified"
+                    name="feedback"
+                    [(ngModel)]="feedback"
+                    contenteditable="true"
+                    (click)="$event.preventDefault();"
+                    user-select= "auto"
+                    scroll="true"
+                    >
+                    </ion-textarea>
+                    
+                  </ion-item>
+                </ion-toolbar>
+            </ion-footer>
+        </form>
+    </div> 
+
+
+    <div class="FBmodalcol">
+       <ion-footer>
+            <ion-row align-items-start align-items-baseline>
+                <ion-col (click)="closeModal()"><ion-icon name="arrow-round-back" class="bottomIcon"></ion-icon></ion-col>
+                <ion-col><img class="BragIcon" src="assets/imgs/RingaIcon.png"/></ion-col>
+                        <ion-col><ion-icon class="bottomIcon" name="call"></ion-icon></ion-col>
+                        <ion-col (click)="presentPopover8($event)"><ion-icon class="bottomIcon" name="eye"></ion-icon></ion-col>
+                              <ion-col><ion-icon class="bottomIcon" name="alarm"></ion-icon></ion-col>
+                         <ion-col (click)="addBrag(BragForm); closeModal()"><ion-icon name="arrow-round-forward" class="bottomIcon"></ion-icon></ion-col>
+             
+           </ion-row>
+        </ion-footer>
+      </div>
+  
+  </ion-content>

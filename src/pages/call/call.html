@@ -1,0 +1,32 @@
+<!--
+  Generated template for the CallPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title  class="title">EasyContact - Phone</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<p class="exit">*click outside to cancel*</p>
+
+<form (ngSubmit)="logForm()" class="content">
+  <ion-item>
+    <!-- <ion-label>Enter Email</ion-label> -->
+    <ion-input [(ngModel)]="username" type="tel"></ion-input>
+    <!-- <ion-input placeholder="Phone number..." type="tel" [(ngModel)]="todo.title" name="title"></ion-input> -->
+  </ion-item>
+  <!-- <ion-item>
+    <ion-label>Description</ion-label>
+    <ion-textarea [(ngModel)]="todo.description" name="description"></ion-textarea>
+  </ion-item> -->
+  <button ion-button type="submit" block>Done</button>
+</form>
+
+</ion-content>

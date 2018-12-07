@@ -1,0 +1,117 @@
+  
+  <ion-content scrollY="true">
+    <ion-segment class="switch">
+      <ion-segment-button value="Bragpost">
+        Brag
+          </ion-segment-button>
+            <ion-segment-button value="BGimages" (click)="presentPopover7($event)">
+         Attached
+      </ion-segment-button>
+    </ion-segment>
+
+    <form #BragForm="ngForm" (ngSubmit)="addBrag(BragForm)">
+      <div class="BPpost">
+          <ion-row>
+              <ion-col col-3 *ngFor="let photo of photos; let id = index">
+                              <ion-card class="block">
+                                <ion-icon name="ios-close-circle-outline" class="deleteIcon" (click)="deletePhoto(id)"></ion-icon>
+                                <img [src]="photo" *ngIf="photo" />
+                              </ion-card>
+              </ion-col>
+          </ion-row>
+        <ion-footer [keyboardAttach]="content" class="BPion-footer">
+            <ion-toolbar class="BPtext-input">
+              <ion-item no-lines class="BPion-item">
+                
+                <ion-textarea autosize
+                  rows="3"
+                  placeholder="Type a new Brag..."
+                  autocomplete="on"
+                  autocorrect="on"
+                  text-style="justified"
+                  name="BGpost"
+                  [(ngModel)]="BGpost"
+                  contenteditable="true"
+                  (click)="$event.preventDefault();"
+                  user-select= "auto"
+                  
+                  >
+                </ion-textarea>
+                
+              </ion-item>
+            </ion-toolbar>
+          </ion-footer>
+        </div> 
+        
+      
+    </form>
+  
+             <div class="BPRingAssist1"><ion-row *ngIf="buttonClicked">
+              <ion-col text-center>Cancel</ion-col>
+              <ion-col text-center>Attach</ion-col>
+              <!-- <ion-col text-center>Photos</ion-col> -->
+              <ion-col text-center>Select</ion-col>
+              <ion-col text-center>Assist</ion-col>
+              <ion-col text-center>Send</ion-col>
+          </ion-row></div> 
+    
+    <div>
+       <ion-footer>
+          <ion-row class="BPmodalcol">
+           
+             <ion-col (click)="closeModal()" ><ion-icon name="arrow-round-back" class="BPicons"></ion-icon></ion-col>
+                  <ion-col (click)="attachFile(); pickFile()"><ion-icon name="attach" class="BPicons"></ion-icon></ion-col>
+                  <!-- https://ionicframework.com/docs/api/components/action-sheet/ActionSheetController/ -->
+                  <!-- <ion-col (click)="selectPhoto()"><ion-icon name="images" class="BPicons"></ion-icon></ion-col> -->
+                 // use this one  <ion-col (click)="showActionSheet()"><ion-icon name="camera" class="BPicons"></ion-icon></ion-col>
+                  <ion-col (click)="onButtonClick()"><ion-icon name="help-circle" class="BPicons"></ion-icon></ion-col>
+              <ion-col (click)="addBrag(BragForm); closeModal()"><ion-icon name="arrow-round-forward" class="BPicons"></ion-icon></ion-col>
+                
+          </ion-row>
+        </ion-footer>
+      </div>
+    
+
+    
+     
+  
+      
+         
+  
+ 
+
+
+  
+  <!-- responsive gallery https://www.youtube.com/watch?v=Wa6QXQj6UaM -->
+  <!-- https://www.youtube.com/watch?v=Wa6QXQj6UaM -->
+
+  <!-- HORIZONTAL SCROLL images -->
+                <!-- <div class="BGpostIMG">
+                    <ion-scroll scrollX="true" style="white-space: nowrap; height: 200px">
+                      <ion-grid>
+                          
+                        <ion-row>
+                        <ion-col col-4 *ngFor="">
+                            <img [src]="" imageViewer /> -->
+                            <!-- https://stackoverflow.com/questions/43196990/how-to-zoom-image-inside-ion-scroll -->
+                          <!-- </ion-col>
+                        </ion-row>
+                      
+                      </ion-grid>
+                    </ion-scroll>
+                  </div> -->
+               
+             <!-- </form> -->
+             
+        
+  
+    
+   
+   
+     
+  
+  
+  
+  </ion-content>
+
+  

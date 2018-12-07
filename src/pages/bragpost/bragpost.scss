@@ -1,0 +1,118 @@
+
+  // cursor: url('http://ionicframework.com/img/finger.png'), auto;
+  
+  
+  // https://stackoverflow.com/questions/46953893/make-an-ion-textarea-scrollable-when-height-is-exceeding-max-height
+  
+  
+  page-bragpost{
+
+        .toolbar-background {
+            background-color: whitesmoke;
+            height: 300px;
+            position: absolute;
+            // bottom: 20%;
+        }
+        ion-content{
+          border-bottom: 2px;
+          border-top: 2px;
+          border-color: blanchedalmond;
+      
+      }
+      .image-container {
+        min-height: 200px;
+        background-size: cover;
+    }
+
+}
+.BPRingAssist{
+  position: fixed;
+  color: grey;
+  // font-weight: bold;
+  text-align: center;
+  bottom: 7%;
+  width: 100%;
+  left: 0%;
+  // right: 22%;
+}  
+    
+.BPRingAssist1{
+    position: fixed;
+    color: grey;
+    // font-weight: bold;
+    text-align: center;
+    bottom: 6%;
+    width: 100%;
+    left: 0%;
+    // right: 22%;
+}
+.BPmodalcol{
+    background-color: aliceblue;
+    width: 100%;
+    // position: fixed;
+    // bottom: 0% !important;
+    font-size: 15px;
+    // color: #8acdf7;
+    left: 0%;
+    text-align: center;
+    // height: 32px;
+  }
+  .BPhelp{
+      position: absolute;
+      right:2%;
+  }
+.BPicons{
+    font-size: 25px;
+    color: map-get($colors, primary);
+
+}
+.BPpost{
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    // POSition textarea box
+    bottom: 10%;
+}
+.BGpostIMG { 
+    background-color: whitesmoke;
+    width:90%;
+    border-radius: 5px;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    height:15%;
+  }
+  .BPion-footer {
+    ion-toolbar.toolbar.toolbar-ios {
+        &.toolbar:last-child {
+        padding-bottom: 0px;
+        height: auto;
+        }
+        }
+        .BPion-item.item-textarea {
+            background-color: white;
+        }
+        .text-input {
+            height: auto;
+            div.input-wrapper {
+            background-color: #fff;
+            border-radius: 20px;
+            textarea.text-input {
+                margin-left: 8px;
+                max-height: 350px;
+            }
+            }
+        }
+        }
+// // page-bragpost {
+
+// // }
+// // cursor: url('http://ionicframework.com/img/finger.png'), auto;
+
+
+// // https://stackoverflow.com/questions/46953893/make-an-ion-textarea-scrollable-when-height-is-exceeding-max-height
+// // page-bragpost {
+
+// // }
+// // cursor: url('http://ionicframework.com/img/finger.png'), auto;

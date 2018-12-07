@@ -1,0 +1,79 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button (click)="back()" class="back">
+       
+        </button>
+        <ion-title class="giftTitle">Feedback</ion-title>
+        <button class="help">
+            <ion-icon name="help"></ion-icon>
+        </button>
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content padding scrollY="true">
+  
+        <!-- <div>
+                <img class="Logo" src="assets/imgs/logo.png">          
+            </div> -->
+
+          
+              <div class="FBheading">
+                  <h2>@AllanBenz</h2>
+                  <br>
+                  <br>
+                  <p>wants to hear from you.</p>
+                </div>
+            
+            
+
+  
+              <!-- <div>
+                    <button large class="Fbkview">View</button>
+                          <button (click)="pop()" large class="Fbkdone">Done</button>
+                              </div> -->
+      
+<div class=""> 
+    <form #BragForm="ngForm" (ngSubmit)="addBrag(BragForm)">
+        
+            <ion-footer [keyboardAttach]="content" class="">
+                <ion-toolbar class="BPtext-input">
+                  <ion-item no-lines class="BPion-item">
+                    
+                    <ion-textarea autosize
+                    rows="3"
+                    placeholder="Type here..."
+                    autocomplete="on"
+                    autocorrect="on"
+                    text-style="justified"
+                    name="BGpost"
+                    [(ngModel)]="BGpost"
+                    contenteditable="true"
+                    (click)="$event.preventDefault();"
+                    user-select= "auto"
+                    scroll="true"
+                    >
+                    </ion-textarea>
+                    
+                  </ion-item>
+                </ion-toolbar>
+            </ion-footer>
+        </form>
+    </div> 
+
+    
+    <div>
+       <ion-footer>
+            <ion-row align-items-start align-items-baseline>
+                    <ion-col><img class="BragIcon" src="assets/imgs/RingaIcon.png"/></ion-col>
+                        <ion-col><ion-icon class="bottomIcon" name="call"></ion-icon></ion-col>
+                              <ion-col><ion-icon class="bottomIcon" name="mail"></ion-icon></ion-col>
+                         <ion-col><ion-icon class="bottomIcon" name="alarm"></ion-icon></ion-col>
+                     <ion-col><ion-icon class="bottomIcon" name="pin"></ion-icon></ion-col>
+                 <ion-col><ion-icon class="bottomIcon" name="share"></ion-icon></ion-col>
+             
+           </ion-row>
+        </ion-footer>
+      </div>
+  
+  </ion-content>
